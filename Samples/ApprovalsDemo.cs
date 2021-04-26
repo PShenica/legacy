@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using ApprovalTests;
+using ApprovalTests.Reporters;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace Samples
 {
-    [TestFixture]
+    [UseReporter(typeof(DiffReporter))]
     public class ApprovalsDemo
     {
         [Test]
         public void Puzzle15_InitialState()
         {
             var puzzle15 = new Puzzle15();
-            // TODO: assert
-            // HINT: Approvals.Verify
+
+            Approvals.Verify(puzzle15);
         }
 
         #region Как это работает
 
         // DiffReporter - выбирает наилучший имеющийся в наличии способ сравнения
-        // Approvals.Verify создает файл *.received.txt с текущим значением и сравнивает его с файлом *.approved.txt 
+        // Approvals.Verify создает файл *.received.txt с текущим значением и сравнивает его с файлом *.approved.txt
 
         #endregion
 

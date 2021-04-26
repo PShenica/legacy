@@ -1,8 +1,9 @@
 using System;
+using ProviderProcessor.ProviderDatas;
 
 namespace ProviderProcessing.ProviderDatas
 {
-    public class ProviderRepository
+    public class ProviderRepository : IProviderRepository
     {
         public ProviderData FindByProviderId(Guid providerId)
         {

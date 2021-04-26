@@ -12,6 +12,7 @@
     <PackageReference Include="FakeItEasy" Version="6.2.1" />
     <PackageReference Include="FireSharp" Version="2.0.4" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="kdiff3" Version="0.9.95" />
     <PackageReference Include="log4net" Version="2.0.12" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
